@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jpa: # A 서버에서 테이블 생성 및 데이터를 입력
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
